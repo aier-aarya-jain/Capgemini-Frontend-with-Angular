@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.box1 {
+    width: 200px;
+    height: 100px;
+    background: lightcoral;
+    border-radius: 10px;
+}
+
+.box2 {
+    width: 200px;
+    height: 100px;
+    background: lightgreen;
+    border-radius: 50px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: skyblue;
+    border-radius: 50%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="box1">Hiii</div>
+<br>
+<div class="box2">Hello</div>
+<br>
+<div class="circle"></div>
+
+</body>
+</html>

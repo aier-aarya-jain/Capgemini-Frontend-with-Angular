@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal CSS Selectors</title>
+
+    <style>
+        /* 1. Element Selector */
+        p {
+            color: rgb(22, 31, 17);
+        }
+
+        /* 2. Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* 3. ID Selector */
+        #main-title {
+            color: rgb(109, 54, 54);
+            text-align: center;
+        }
+
+        /* 4. Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* 5. Group Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* 6. Descendant Child Selector */
+        div p {
+            font-style: italic;
+        }
+
+        /* 7. Direct Child Selector */
+        div > h4 {
+            color: purple;
+        }
+
+        /* 8. Adjacent Sibling Selector */
+        h2 + p {
+            border: 1px solid black;
+            background-color: rgb(235, 250, 23);
+        }
+
+        /* 9. General Sibling Selector */
+        h3 ~ p {
+            background-color: rgb(87, 195, 214);
+        }
+
+        /* 10. Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        /* 11. Pseudo-class */
+        a:hover {
+            color: orange;
+        }
+        a:active{
+            color: rgb(224, 24, 124) ;
+        }
+        input:focus {
+            border: 2px solid rgb(255, 217, 0);
+            outline: none;
+        }
+        /* 12. Pseudo-element */
+        p::first-letter {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="main-title">CSS Selectors Demo</h1>
+
+    <h2>Heading 2</h2>
+    <p>This paragraph is affected by adjacent selector.</p>
+
+    <h3>Heading 3</h3>
+    <p>This paragraph is affected by general sibling selector.</p>
+
+    <div>
+        <p>This is inside div (descendant selector).</p>
+        <h4>Direct child of div</h4>
+    </div>
+
+    <p class="highlight">This is a highlighted paragraph.</p>
+
+    <input type="text" placeholder="click here">
+
+    <br><br>
+    <a href="#">Hover over me</a>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.para {
+    color: green;
+    font-size: 18px;
+}
+
+#special {
+    color: red;
+    font-weight: bold;
+}

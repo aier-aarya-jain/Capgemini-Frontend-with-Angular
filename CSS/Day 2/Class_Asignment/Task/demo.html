@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* BASIC RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: #2a5298;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    background: #00000080;
+}
+
+/* LEFT */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-left img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+}
+
+/* CENTER SEARCH */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+}
+
+.search-box span {
+    color: black;
+    margin-right: 5px;
+}
+
+/* RIGHT */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-right img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* CARD */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h1 {
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+    <!-- LEFT -->
+    <div class="nav-left">
+        <img src="download (12).jpeg">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- CENTER -->
+    <div class="search-box">
+        
+        <input type="text" placeholder="Search...">
+        <span>🔍</span>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+        <img src="download (12).jpeg">
+        <button>Logout</button>
+    </div>
+
+</div>
+
+<!-- CARD -->
+<div class="container">
+    <div class="card">
+        <h1>Welcome</h1>
+    </div>
+</div>
+
+</body>
+</html>
