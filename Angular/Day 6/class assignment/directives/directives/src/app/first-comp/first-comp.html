@@ -1,0 +1,39 @@
+ <h1 [ngClass]="{
+    classA : applyClass,
+    classB : !applyClass
+} ">NG CLASS </h1>
+
+<button (click) = "shouldApply()">Click to change classes</button> 
+
+
+<h1 [ngStyle]="{
+    'color': applyStyle ? 'red' : 'blue',
+    'font-size': applyStyle ? '24px' : '16px',
+    'background-color': applyStyle ? 'yellow' : 'white'
+}">NG STYLE</h1>
+
+<button (click)="shouldApply()">Click to change styles</button> 
+
+
+<h1 *ngIf="applyClass">Ng True</h1>
+<h1 *ngIf="!applyClass">Ng False</h1>
+
+@if(applyClass) {
+    <h1 class="classA">Conditiion is true </h1>
+}@else {
+    <h1 class="classB">Condition is False</h1>
+}
+
+<button (click)="shouldApplyClass()">Click to change classes</button>
+ 
+
+ <ul>
+    @for (item of arr1 ; track $index){
+        <li>{{item}}</li>
+    }@empty {
+        <h1>nothing to display</h1>
+    }
+ </ul>
+ <ol>
+     <li *ngFor="let ele of arr"> {{ele}}</li>
+</ol>
