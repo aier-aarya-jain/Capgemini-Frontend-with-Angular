@@ -9,7 +9,6 @@
 
 <hr>
 
-<!-- TABLE VIEW -->
 @if (viewType === 'table') {
   <table border="1">
     <tr>
@@ -33,7 +32,6 @@
   </table>
 }
 
-<!-- LIST VIEW -->
 @if (viewType === 'list') {
   <ul>
     @for (s of students; track $index) {
@@ -46,7 +44,6 @@
   </ul>
 }
 
-<!-- CARD VIEW -->
 @if (viewType === 'card') {
   <div class="card-container">
     

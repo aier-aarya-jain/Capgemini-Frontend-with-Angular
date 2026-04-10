@@ -18,7 +18,6 @@ th, td {
   text-align: center;
 }
 
-/* Card  */
 .card-container {
   display: flex;
   gap: 15px;
