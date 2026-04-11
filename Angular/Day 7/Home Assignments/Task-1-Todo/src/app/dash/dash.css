@@ -2,7 +2,8 @@
   display: block;
   font-family: system-ui, sans-serif;
   min-height: 100vh;
-  background: #f5f6fa;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 40%, #a5f0fc 100%);
+  color: #fff;
 }
 
 nav {
@@ -11,7 +12,8 @@ nav {
   align-items: center;
   padding: 0 2rem;
   height: 60px;
-  background: #111;
+  background: rgba(17, 17, 17, 0.85);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
   color: #fff;
 }
 
@@ -27,24 +29,30 @@ nav {
 
 .links a {
   text-decoration: none;
-  color: #bbb;
-  padding: 6px 12px;
-  border-radius: 6px;
-  transition: 0.2s;
+  color: #e3e8ff;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.25s ease;
 }
 
 .links a:hover {
-  background: #333;
+  background: rgba(255, 255, 255, 0.25);
   color: #fff;
 }
 
 .links a.active {
-  background: #fff;
+  background: #ffffff;
   color: #111;
 }
 
 .container {
   max-width: 600px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 1.5rem 1.5rem 2rem;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(16px);
 }
